@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import String
 
 def callback(data):
-    print '\n!'.join(data.data.split('!'))
+    print '\n  '.join(data.data.split('!@'))
     print
     
 def listener():
