@@ -9,7 +9,7 @@ def callback(data):
     
 def listener():
     rospy.init_node('appcast_viewer', anonymous=True)
-    rospy.Subscriber('/zmq/appcast',String, callback)
+    rospy.Subscriber('/udp/appcast',String, callback)
     rospy.spin()
     
 if __name__ == '__main__':
